@@ -202,53 +202,10 @@ $(function() {
     //====== Magnific Popup
     
     $('.Video-popup').magnificPopup({
-        type: 'inline',
-        midClick: true,
-        closeBtnInside: true,
-        callbacks: {
-            open: function () {
-                var v = this.content.find('video').get(0);
-                if (v) {
-                    v.currentTime = 0;
-                    v.play().catch(function(){});
-                }
-            },
-            close: function () {
-                var v = this.content.find('video').get(0);
-                if (v) {
-                    v.pause();
-                    v.currentTime = 0;
-                }
-            }
-        }
+        type: 'iframe'
+        // other options
     });
     
-    //===== video pop up
-
-        $(document).ready(function () {
-      $('.video-popup').magnificPopup({
-        type: 'inline',
-        midClick: true,
-        closeBtnInside: true,
-        callbacks: {
-          open: function () {
-            var v = this.content.find('video').get(0);
-            if (v) {
-              v.currentTime = 0;
-              v.play().catch(function(){});
-            }
-          },
-          close: function () {
-            var v = this.content.find('video').get(0);
-            if (v) {
-              v.pause();
-              v.currentTime = 0;
-            }
-          }
-        }
-      });
-    });
-
     
     //===== Slick testimonial Slied
     
