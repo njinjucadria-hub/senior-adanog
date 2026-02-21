@@ -1167,172 +1167,6 @@ p {
 
 
 /*=====================================================
-    7. COURSE css 
-======================================================*/
-
-.singel-course{
-    background-color: #fff;
-    border-radius: 5px;
-    overflow: hidden;
-}
-.singel-course > .thum{
-    position: relative;
-}
-.singel-course .thum .image{
-    overflow: hidden;
-}
-.singel-course .thum .image img{
-    width: 100%;
-    -webkit-transition: all 0.4s linear;
-    transition: all 0.4s linear;
-}
-.singel-course:hover .thum .image img{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-.singel-course .thum .price{
-    position: absolute;
-    right: 60px;
-    bottom: -24px;
-}
-.singel-course .thum .price span{
-    font-size: 14px;
-    color: #07294d;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    border-radius: 50%;
-    background-color: #ffc600;
-    text-align: center;
-}
-.singel-course .cont{
-    padding-top: 28px;
-    padding-bottom: 34px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.singel-course .cont > ul{
-    display: inline-block;
-    margin-right: 10px;
-}
-.singel-course .cont ul li{
-    display: inline-block;
-    margin: 1px;
-}
-.singel-course .cont ul li > i{
-    font-size: 13px;
-    color: #ffc600;
-}
-
-.singel-course .cont span{
-    font-size: 13px;
-    color: #000;
-}
-.singel-course .cont h4{
-    font-weight: 600;
-    font-size: 24px;
-    color: #000;
-    padding-top: 15px;
-    padding-bottom: 40px;
-    -webkit-transition: all 0.4s linear;
-    transition: all 0.4s linear;
-}
-.singel-course .cont h4:hover{
-    color: #ffc600;
-}
-
-.singel-course .course-teacher{
-    border-top: 1px solid #e0e0e0;
-    padding-top: 20px;
-    overflow: hidden;
-}
-.singel-course .course-teacher > .thum{
-    display: inline-block;
-}
-.singel-course .course-teacher > .thum img{
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
-.singel-course .course-teacher .name {
-	display: inline-block;
-	margin-left: 10px;
-	position: relative;
-	bottom: 13px;
-}
-.singel-course .course-teacher .name a h6{
-    font-size: 15px;
-    color: #24486e;
-    -webkit-transition: all 0.4s linear;
-    transition: all 0.4s linear;
-}
-.singel-course .course-teacher .name a:hover h6{
-    color: #ffc600;
-}
-
-.singel-course .course-teacher .admin{
-    display: inline-block;
-    float: right;
-    overflow: hidden;
-}
-.singel-course .course-teacher .admin ul {
-	margin-top: 8px;
-}
-.singel-course .course-teacher .admin ul li{
-    margin-right: 20px;
-}
-.singel-course .course-teacher .admin ul li:last-child{
-    margin-right: 0;
-}
-.singel-course .course-teacher .admin ul li a{
-    font-size: 15px;
-    color: #8a8a8a;
-    -webkit-transition: all 0.4s linear;
-    transition: all 0.4s linear;
-}
-.singel-course .course-teacher .admin ul li a:hover{
-    color: #ffc600;
-}
-
-.singel-course .course-teacher .admin ul li a span{
-    color: #8a8a8a;
-    margin-left: 3px;
-}
-
-.course-slied{}
-.course-slied .slick-arrow {
-	position: absolute;
-	top: -125px;
-	right: 0;
-}
-.course-slied .prev.slick-arrow{
-    left: auto;
-    right: 50px;
-}
-.course-slied .slick-arrow i{
-    width: 40px;
-    height: 40px;
-    line-height: 36px;
-    border-radius: 5px;
-    color: #000;
-    border: 2px solid #aaaaaa;
-    font-size: 18px;
-    text-align: center;
-    cursor: pointer;
-    -webkit-transition: all 0.4s linear;
-    transition: all 0.4s linear;
-}
-
-.course-slied .slick-arrow:hover i{
-    border-color: #ffc600;
-    background-color: #ffc600;
-}
-
-
-/*=====================================================
     8. VIDEO FEATURES css 
 ======================================================*/
 
@@ -2349,97 +2183,333 @@ p {
 }
 
 
-
 /*=====================================================
-    22. COURSES PAGE css 
+    23. CURRICULUM PAGE css 
 ======================================================*/
 
-.tab-content{}
-.tab-content .singel-course .course-teacher .name {
-    bottom: 0;
+/*----- Section Background -----*/
+.gray-bg {
+    background: #f9f9f9;
 }
 
-.courses-top-search{
-    background-color: #fff;
-    padding: 15px 30px;
-    border-radius: 5px;
+.pt-120 { padding-top: 120px; }
+.pb-120 { padding-bottom: 120px; }
+.mt-30 { margin-top: 30px; }
+.mt-50 { margin-top: 50px; }
+
+/*----- System Tabs -----*/
+.courses-top-search {
     overflow: hidden;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e8e8e8;
+    padding-bottom: 20px;
 }
-.courses-top-search .nav{
+
+.courses-top-search .nav {
+    border-bottom: none;
     margin-top: 5px;
 }
-.courses-top-search .nav .nav-item{
-    margin-right: 15px;
-    font-size: 15px;
-    color: #8a8a8a;
-}
-.courses-top-search .nav .nav-item a{
-    font-size: 16px;
-    color: #8a8a8a;
+
+.courses-top-search .nav li {
+    display: inline-block;
+    margin-right: 30px;
 }
 
-.courses-top-search .nav .nav-item a.active{
-    color: #ffc600;
+.courses-top-search .nav li a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #666;
+    padding: 0 0 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    border-radius: 0;
+    transition: 0.3s;
 }
 
-.courses-search{
-    position: relative;
+.courses-top-search .nav li a.active,
+.courses-top-search .nav li a:hover {
+    color: #07294d;
+    border-bottom-color: #ffc600;
+    background: transparent;
 }
-.courses-search input{
-    height: 30px;
-    width: 240px;
-    background-color: #f6f6f6;
-    border: 0;
-    color: #8a8a8a;
+
+.courses-top-search .nav li span {
     font-size: 14px;
-    border-radius: 5px;
-    padding: 0 20px;
+    color: #999;
+    margin-left: 20px;
 }
-.courses-search button{
+
+/*----- Search Form -----*/
+.courses-search form {
+    position: relative;
+    width: 260px;
+}
+
+.courses-search input {
+    width: 100%;
+    height: 45px;
+    padding: 0 50px 0 20px;
+    border: 1px solid #e8e8e8;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #666;
+    transition: 0.3s;
+}
+
+.courses-search input:focus {
+    border-color: #ffc600;
+    outline: none;
+}
+
+.courses-search button {
     position: absolute;
     top: 0;
-    right: 15px;
-    padding: 0;
-    height: 30px;
-    font-size: 15px;
-    color: #8a8a8a;
-    border: 0;
-    background: none;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: none;
+    color: #ffc600;
+    font-size: 16px;
     cursor: pointer;
 }
 
-#courses-list .singel-course .thum .price {
-	right: -25px;
-	bottom: auto;
-	top: 30px;
+/*----- Course Card -----*/
+.singel-course {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
 }
 
-.courses-pagination{}
-.courses-pagination .pagination{}
-.courses-pagination .pagination .page-item{
-    margin: 0 5px;
+.singel-course:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
 }
-.courses-pagination .pagination .page-item a{
-    font-size: 15px;
+
+.singel-course .thum {
+    position: relative;
+}
+
+.singel-course .thum .image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.singel-course .thum .price {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ffc600;
     color: #07294d;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.singel-course .cont {
+    padding: 25px 20px 20px;
+}
+
+.singel-course .cont ul {
+    margin-bottom: 5px;
+    padding: 0;
+    list-style: none;
+}
+
+.singel-course .cont ul li {
+    display: inline-block;
+    color: #ffc600;
+    font-size: 14px;
+    margin-right: 2px;
+}
+
+.singel-course .cont > span {
+    font-size: 14px;
+    color: #999;
+    margin-left: 5px;
+}
+
+.singel-course .cont > a h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #07294d;
+    margin: 10px 0 15px;
+    transition: 0.3s;
+    line-height: 1.4;
+}
+
+.singel-course .cont > a:hover h4 {
+    color: #ffc600;
+}
+
+/*----- Teacher Info -----*/
+.course-teacher {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #e8e8e8;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.course-teacher .thum {
     width: 40px;
     height: 40px;
-    line-height: 36px;
-    border: 2px solid #aaa;
-    border-radius: 5px;
-    text-align: center;
-    -webkit-transition: all 0.4s linear;
-    transition: all 0.4s linear;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
 }
-.courses-pagination .pagination .page-item a.active,
-.courses-pagination .pagination .page-item a:hover{
-    background-color: #ffc600;
-    border-color: #ffc600;
+
+.course-teacher .thum img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course-teacher .name h6 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #07294d;
+    margin: 0;
+}
+
+.course-teacher .admin {
+    margin-left: auto;
+}
+
+.course-teacher .admin ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.course-teacher .admin ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.course-teacher .admin ul li a {
+    color: #999;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.course-teacher .admin ul li a:hover {
+    color: #ffc600;
+}
+
+.course-teacher .admin ul li a i {
+    margin-right: 5px;
+}
+
+/*----- Pagination -----*/
+.courses-pagination .pagination {
+    margin: 0;
+}
+
+.courses-pagination .pagination li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.courses-pagination .pagination li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    color: #07294d;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.courses-pagination .pagination li a:hover,
+.courses-pagination .pagination li a.active {
+    background: #ffc600;
+    color: #07294d;
+}
+
+/*----- Responsive -----*/
+@media (max-width: 991px) {
+    .pt-120 { padding-top: 80px; }
+    .pb-120 { padding-bottom: 80px; }
+    
+    .courses-top-search .nav li {
+        margin-right: 20px;
+    }
+    
+    .courses-top-search .nav li a {
+        font-size: 16px;
+    }
+    
+    .courses-search form {
+        width: 220px;
+    }
+}
+
+@media (max-width: 767px) {
+    .courses-top-search {
+        text-align: center;
+    }
+    
+    .courses-top-search .nav.float-left,
+    .courses-search.float-right {
+        float: none !important;
+        display: inline-block;
+    }
+    
+    .courses-search {
+        margin-top: 15px;
+    }
+    
+    .courses-search form {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .courses-top-search .nav li span {
+        display: block;
+        margin: 10px 0 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .singel-course .thum .image img {
+        height: 180px;
+    }
+    
+    .singel-course .cont > a h4 {
+        font-size: 18px;
+    }
+    
+    .course-teacher {
+        flex-wrap: wrap;
+    }
+    
+    .course-teacher .admin {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .course-teacher .admin ul li:first-child {
+        margin-left: 0;
+    }
 }
 
 
 /*=====================================================
-    23. COURSE SINGEl PAGE css 
+    24. COURSE SINGEl PAGE css 
 ======================================================*/
 
 .corses-singel-left{
